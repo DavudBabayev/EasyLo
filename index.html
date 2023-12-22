@@ -15,7 +15,7 @@
         <div class="container navcon">
             <img src="https://preview.colorlib.com/theme/easylo/assets/img/logo/logo.png.webp" alt="">
             <ul class="fullmenu">
-                <a href="#">Home</a>
+                <a href="./index.html">Home</a>
                 <a href="#">About</a>
                 <a href="#">Services</a>
                 <li>Blog
@@ -23,6 +23,12 @@
                         <a href="#">Blog</a>
                         <a href="#">Blog Details</a>
                         <a href="#">Element</a>
+                    </ul>
+                </li>
+                <li>CRUD
+                    <ul class="boxmenu">
+                        <a href="./add.html">Add</a>
+                        <a href="./favorites.html">Favorites</a>
                     </ul>
                 </li>
                 <a href="#">Contact</a>
@@ -41,6 +47,12 @@
                             <a href="#">Blog</a>
                             <a href="#">Blog Details</a>
                             <a href="#">Element</a>
+                        </ul>
+                    </li>
+                    <li>CRUD
+                        <ul class="boxmenu">
+                            <a href="./add.html">Add</a>
+                            <a href="./favorites.html">Favorites</a>
                         </ul>
                     </li>
                     <a href="#">Contact</a>
@@ -89,29 +101,9 @@
                 <p>The brochure must grab a viewer’s attention and hold it long
                     enough to deliver the pertinent information.</p>
             </div>
-            <div class="card">
-                <div>
-                    <img src="https://preview.colorlib.com/theme/easylo/assets/img/icon/services1.svg" alt="">
-                    <h6>Home Loan</h6>
-                    <a href="#">What are my options and the cost to exercise?</a>
-                    <p>Tools such as a profit and tax calculator show the value of your stock options and exercise cost.
-                    </p>
-                </div>
-                <div>
-                    <img src="https://preview.colorlib.com/theme/easylo/assets/img/icon/services2.svg" alt="">
-                    <h6>Car Loan</h6>
-                    <a href="#">Should I exercise now or later? How can I afford it?</a>
-                    <p>Tools such as a profit and tax calculator show the value of your stock options and exercise cost.
-                    </p>
-                </div>
-                <div>
-                    <img src="https://preview.colorlib.com/theme/easylo/assets/img/icon/services3.svg" alt="">
-                    <h6>Business Loan</h6>
-                    <a href="#">I own my shares - can I get liquidity now without selling?</a>
-                    <p>Tools such as a profit and tax calculator show the value of your stock options and exercise cost.
-                    </p>
-                </div>
-            </div>
+            <input type="search" id="search" placeholder="Search">
+            <div class="card"> </div>
+            <button class="load">Load More</button>
         </div>
     </div>
     <div class="section3">
@@ -128,12 +120,12 @@
                 <p>Tools such as a profit simulator and tax calculator show the value of your stock options and exercise
                     cost. The brochure must grab a viewer’s attention and hold it long enough to deliver the pertinent
                     information.</p>
-                    <hr>
-                    <ul>
-                        <li>Monthly recurring revenue</li>
-                        <li>Customer acquisition cost</li>
-                        <li>Number of customers</li>
-                    </ul>
+                <hr>
+                <ul>
+                    <li>Monthly recurring revenue</li>
+                    <li>Customer acquisition cost</li>
+                    <li>Number of customers</li>
+                </ul>
                 <button>LEARN MORE</button>
             </div>
         </div>
@@ -180,12 +172,12 @@
                 <p>Tools such as a profit simulator and tax calculator show the value of your stock options and exercise
                     cost. The brochure must grab a viewer’s attention and hold it long enough to deliver the pertinent
                     information.</p>
-                    <hr>
-                    <ul>
-                        <li>Monthly recurring revenue</li>
-                        <li>Customer acquisition cost</li>
-                        <li>Number of customers</li>
-                    </ul>
+                <hr>
+                <ul>
+                    <li>Monthly recurring revenue</li>
+                    <li>Customer acquisition cost</li>
+                    <li>Number of customers</li>
+                </ul>
                 <button>LEARN MORE</button>
             </div>
             <div class="sec52">
@@ -224,12 +216,34 @@
         </div>
     </div>
     <footer>
-        <div class="container footcon"><p>Copyright ©2023 All rights reserved | This template is made with <i class="bi bi-heart-fill"></i> by <a href="#">Colorlib</a></p></div>
+        <div class="container footcon">
+            <p>Copyright ©2023 All rights reserved | This template is made with <i class="bi bi-heart-fill"></i> by <a
+                    href="#">Colorlib</a></p>
+        </div>
     </footer>
     <a href="" class="upBtn"><i class="bi bi-arrow-up"></i></a>
+    <div class="updatediv">
+        <div class="container">
+            <form>
+                <p><i class="bi bi-x"></i></p>
+                <label for="category-name">Image:</label>
+                <input type="file" id="file">
+                <div class="img2"> <img src=" " id="img2" alt=""></div>
+                <label for="Name">Image Text</label>
+                <input type="text" id="imagetxt">
+                <label for="Name">Name</label>
+                <input type="text" id="name">
+                <label for="text">Text</label>
+                <input type="text" id="text">
+                <input type="submit" value="Submit" id="submit">
+            </form>
+        </div>
+    </div>
 
 
 
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./assets/scripts/index.js"></script>
 </body>
 
