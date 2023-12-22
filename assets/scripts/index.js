@@ -25,3 +25,17 @@ window.addEventListener("scroll", ()=>{
         nav.style.backgroundColor = "transparent"
     }
 })
+
+///Go To Top///
+
+document.addEventListener("DOMContentLoaded", function () {
+    const upBtn = document.querySelector('.upBtn');
+
+    upBtn.addEventListener('click', function (e) {
+        e.preventDefault()
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+});
