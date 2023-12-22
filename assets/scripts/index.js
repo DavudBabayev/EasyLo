@@ -78,7 +78,7 @@ async function getAll(){
                     <button class="delete" onclick="deleteCard(${element.id})"><i class = "bi bi-trash"></i> Delete</button>
                     <button class="update" onclick="updateCard(${element.id})"><i class = "bi bi-arrow-clockwise"></i> Update</button>
                 </span>
-                <i onclick="addFavorite(${element.id})" class="bi bi-heart"></i>
+                <i onclick="addFav(${element.id})" class="bi bi-heart"></i>
             </div>
         `
     });
